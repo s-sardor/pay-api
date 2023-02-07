@@ -9,7 +9,7 @@ font-family: 'Public Sans', sans-serif;
 /* colors */
 
 :root {
-    --dark-pink:#ba4270;
+    --dark-pink: #ba4270;
     --link-water-white: #fbfcfe;
     --san-juan-blue: #36536b;
     --mirage-blue: #1b262f;
@@ -27,46 +27,103 @@ ul {
     list-style: none;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 400;
     font-family: 'DM Serif Display', serif;
 }
 
 .xl-large {
     font-size: 72px;
+    font-weight: 400;
     line-height: 72px;
 }
+
 .xl-small {
     font-size: 56px;
+    font-weight: 400;
     line-height: 56px;
 }
 
 h2 {
     font-size: 48px;
+    font-weight: 400;
     line-height: 56px;
+    color: var(--link-water-white);
+    margin-bottom: 25px;
 }
+
 
 .md-large {
     font-size: 32px;
+    font-weight: 400;
     line-height: 40px;
 }
+
 .md-small {
     font-size: 18px;
+    font-weight: 700;
     line-height: 25px;
     font-family: 'Public Sans', sans-serif;
 }
 
 h4 {
     font-size: 24px;
+    font-weight: 400;
     line-height: 32px;
 }
 
 .text {
     font-size: 15px;
+    font-weight: 400;
     line-height: 28px;
     font-family: 'Public Sans', sans-serif;
+    opacity: 0.7;
 }
 
 /* buttons */
+
+input {
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+.schedule-form {
+    width: 445px;
+    height: 48px;
+    margin-bottom: 16px;
+    border-radius: 24px;
+    background: #FBFCFE;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+}
+
+.schedule-form input[type="email"] {
+    width: 270px;
+    height: 100%;
+    padding: 0 28px;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: var(--san-juan-blue);
+    background: #FBFCFE;
+}
+
+.schedule-form input[type="email"]::placeholder {
+    opacity: 0.7;
+}
+
+.schedule-form input[type="submit"] {
+    margin-left: auto;
+}
 
 .primary-btn {
     font-size: 15px;
@@ -77,7 +134,9 @@ h4 {
     box-shadow: 10px 10px 25px -10px #36536b40;
     padding: 15px 25px;
     border-radius: 24px;
+    transition: all 0.25s;
 }
+
 .primary-btn:hover {
     background: var(--charm-pink);
 }
@@ -90,8 +149,10 @@ h4 {
     background: transparent;
     padding: 15px 30px;
     border-radius: 24px;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
+    transition: all 0.25s;
 }
+
 .secondary-btn-light:hover {
     background: #fff;
     color: var(--mirage-blue);
@@ -105,8 +166,9 @@ h4 {
     background: transparent;
     padding: 15px 30px;
     border-radius: 24px;
-    border: 2px solid var(--san-juan-blue);
+    border: 1px solid var(--san-juan-blue);
 }
+
 .secondary-btn-dark:hover {
     color: #fff;
     background: var(--san-juan-blue);
@@ -116,4 +178,250 @@ body {
     width: 100vw;
     min-height: 100vh;
     background: #ebf3f7;
+}
+
+/* header */
+
+header {
+    background: url(../image/circle.svg) right top/ 620px 600px no-repeat;
+}
+
+#header-menu {
+    padding: 40px 0;
+}
+
+#header-logo {
+    width: 135px;
+    height: 38px;
+}
+
+#header-nav,
+#header-nav li {
+    margin-left: 40px;
+}
+
+#header-nav li a {
+    color: var(--san-juan-blue);
+    opacity: 0.7;
+    text-transform: capitalize;
+    font-weight: 700;
+    transition: all .5s;
+}
+
+#header-nav li a:hover {
+    opacity: 1;
+}
+
+/* header content */
+
+#header-content {
+    height: 600px;
+}
+
+#header-content-title h1 {
+    color: var(--san-juan-blue);
+    margin-bottom: 50px;
+}
+
+#header-content-title span {
+    color: var(--light-san-juan-blue);
+    margin-left: 14px;
+}
+
+#header-content-title span a {
+    color: var(--san-juan-blue);
+    font-weight: 700;
+    opacity: 0.7;
+}
+
+#header-content-title span a:hover {
+    opacity: 1;
+}
+
+
+#header-content-img {
+    background: url(../image/iphone.svg) right center/contain no-repeat;
+}
+
+/* main */
+
+/* brands */
+
+#brands-wrap {
+    width: 100%;
+    padding: 100px 0;
+    padding-bottom: 115px;
+    background: url(../image/circle-2.svg) top left -50px/ 620px 420px no-repeat,
+        var(--mirage-blue);
+}
+
+
+#brands-title p {
+    color: var(--link-water-white);
+    opacity: 0.7;
+    margin-bottom: 50px;
+}
+
+#brands-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center;
+    justify-items: right;
+    justify-content: center;
+    gap: 40px;
+}
+
+.brands-logo-1 {
+    width: 129px;
+    height: 17px;
+}
+
+.brands-logo-2 {
+    width: 145px;
+    height: 31px;
+}
+
+.brands-logo-3 {
+    width: 140px;
+    height: 27px;
+}
+
+.brands-logo-4 {
+    width: 131px;
+    height: 17px;
+}
+
+.brands-logo-5 {
+    width: 96px;
+    height: 33px;
+}
+
+.brands-logo-6 {
+    width: 137px;
+    height: 26px;
+}
+
+
+/* implement */
+
+#implement {
+    padding: 100px 0;
+}
+
+#implement>div {
+    height: 400px;
+}
+
+#implement-img img {
+    width: 100%;
+    transform: translate(-54px, -10px);
+}
+
+#implement-content h2 {
+    color: var(--san-juan-blue);
+}
+
+#implement-content p {
+    color: var(--light-san-juan-blue);
+}
+
+/* UI & UX */
+
+#ui-ux-wrap {
+    height: 780px;
+    background: url(../image/circle-3.svg) right/ auto 100% no-repeat;
+}
+
+#ui-ux-title {
+    padding-right: 80px;
+}
+
+#ui-ux-title h2 {
+    color: var(--san-juan-blue);
+}
+
+#ui-ux-title p {
+    color: var(--light-san-juan-blue);
+}
+
+#ui-ux-img img {
+    width: 50%;
+}
+
+/* Personal */
+
+#personal>div {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+#personal img {
+    width: 106px;
+    height: 106px;
+    margin-bottom: 32px;
+}
+
+#personal h3 {
+    color: var(--san-juan-blue);
+    margin-bottom: 16px;
+}
+
+#personal p {
+    opacity: 1;
+    color: var(--light-san-juan-blue);
+}
+
+/* footer */
+
+/* footer form */
+
+#footer-form {
+    padding: 100px 0;
+}
+
+#footer-form h2 {
+    color: var(--san-juan-blue);
+}
+
+
+/* main footer */
+
+#main-footer-wrap {
+    height: 100px;
+    background: var(--mirage-blue);
+}
+
+#footer-logo {
+    width: 135px;
+    height: 38px;
+}
+
+#footer-nav,
+#footer-nav li {
+    margin-left: 40px;
+}
+
+#footer-nav li a {
+    color: var(--link-water-white);
+    opacity: 0.7;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+#footer-nav li a:hover {
+    opacity: 1;
+}
+
+#social-icons li {
+    margin-left: 24px;
+}
+
+#social-icons li a .bx {
+    color:  #ffff;
+    font-size: 24px;
+    transition: all 0.2s;
+}
+
+#social-icons li a .bx:hover {
+    color: var(--charm-pink);
 }

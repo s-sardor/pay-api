@@ -6,6 +6,14 @@
     box-sizing: border-box;
 }
 
+.f-width {
+    width: 100%;
+}
+
+.f-height {
+    height: 100%;
+}
+
 .container {
     width: 80%;
     margin: 0 auto;
@@ -72,7 +80,7 @@
     flex-basis: 58.333333333%;
 }
 .col-xl-8 {
-    flex-basis: 64.666666666%;
+    flex-basis: 66.666666666%;
 }
 .col-xl-9 {
     flex-basis: 75%;
@@ -110,7 +118,7 @@
         flex-basis: 58.333333333%;
     }
     .col-lg-8 {
-        flex-basis: 64.666666666%;
+        flex-basis: 66.666666666%;
     }
     .col-lg-9 {
         flex-basis: 75%;
@@ -149,7 +157,7 @@
         flex-basis: 58.333333333%;
     }
     .col-md-8 {
-        flex-basis: 64.666666666%;
+        flex-basis: 66.666666666%;
     }
     .col-md-9 {
         flex-basis: 75%;
@@ -188,7 +196,7 @@
         flex-basis: 58.333333333%;
     }
     .col-sm-8 {
-        flex-basis: 64.666666666%;
+        flex-basis: 66.666666666%;
     }
     .col-sm-9 {
         flex-basis: 75%;
